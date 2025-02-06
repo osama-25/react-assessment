@@ -35,8 +35,8 @@ const CityCard = ({ city, image, price, dates, times }) => {
     return (
         <div className="flex md:flex-col w-full gap-y-1 gap-x-3">
             <img src={image} className="rounded-xl w-2/5 md:w-full h-32 md:h-28 mb-2 object-cover" />
-            <div className="flex flex-col w-3/5">
-                <div className="flex justify-between items-center">
+            <div className="flex w-full flex-col w-3/5">
+                <div className="flex w-full justify-between items-center">
                     <span className="text-md font-semibold">{city}</span>
                     {price && <span className="text-md font-semibold">AED {price}</span>}
                 </div>
